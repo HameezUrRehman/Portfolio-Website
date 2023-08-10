@@ -557,20 +557,6 @@ hr {
     font-size: 22px;
   }
 
-  .dropdown-content {
-    height: 130px;
-    padding-bottom: 56px;
-    overflow: hidden;
-    margin-top: 3px;
-    min-width: 110px;
-  }
-
-  .dropdown-content a {
-    padding: 5px;
-    padding-bottom: 6px;
-    margin-top: 5px;
-  }
-
   .chat {
     width: fit-content;
     margin-left: 0;
