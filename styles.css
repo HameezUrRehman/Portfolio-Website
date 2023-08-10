@@ -558,10 +558,10 @@ hr {
   }
 
   .dropdown-content {
-    height: 85px;
+    height: 130px;
     padding-bottom: 56px;
     overflow: hidden;
-    margin-top: 28px;
+    margin-top: 3px;
     min-width: 110px;
   }
 
