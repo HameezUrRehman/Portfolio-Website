@@ -1,0 +1,362 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #595e60;
+  cursor: pointer;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: #f3f5f9;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.logo {
+  font-size: 22px;
+}
+
+ul.navigation {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+ul.navigation li {
+  margin: auto 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  display: flex;
+  font-size: 16px;
+  padding: 0px 7px;
+  border: none;
+  color: #595e60;
+  background-color: #f3f5f9;
+  cursor: pointer;
+}
+
+.dropbtn i {
+  display: inline;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 12px;
+  position: absolute;
+  background-color: white;
+  min-width: 180px;
+  border-radius: 5px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content.show ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.dropdown-content.show ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  text-align: inherit;
+  display: block;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.chat {
+  display: block;
+  font-size: 16px;
+  color: #595e60;
+  background-color: #f3f5f9;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid;
+  cursor: pointer;
+  margin: auto;
+  margin-right: 0;
+}
+
+.chat:hover {
+  background-color: black;
+  color: #fff !important;
+}
+
+.container {
+  width: 90%;
+  margin: 5px auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-6 {
+  width: 50%;
+  margin: 10px;
+}
+
+.mainHeading {
+  font-size: 50px;
+  margin: 30px 0 0;
+}
+
+.subHeading {
+  font-size: 20px;
+  margin: 12px 0;
+}
+
+hr {
+  margin-top: 10px;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.paragraphText {
+  border-bottom: 2px solid purple;
+  width: fit-content;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+h4 {
+  margin: 13px 0;
+}
+
+h3 {
+  margin: 13px 0;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 0;
+}
+
+form {
+  /* Center the form on the page */
+  margin: 20px auto;
+  width: 96%;
+  /* Form outline */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  margin: 5px 0;
+  width: 100%;
+  text-align: left;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+         By default, textareas have a monospace font */
+  font: 20px sans-serif;
+  margin-top: 8px;
+  /* Uniform text field size */
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.btn {
+  font-size: 15px;
+  padding: 16px;
+  border-radius: 5px;
+  border: 1px solid;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: purple;
+  color: #fff;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #f2f2f2;
+}
+
+.footer .container {
+  margin: auto;
+}
+
+.footer p.rights-text {
+  margin: 0;
+}
+
+form.Newsletter {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe-text {
+  font-size: 20px;
+  padding-top: 20px;
+  color: blue;
+}
+
+.footer input[type="text"],
+input[type="submit"] {
+  font-size: 15px;
+  width: 305px;
+  margin-top: -7px;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+
+input[type="submit"] {
+  width: 25%;
+  margin-left: -6px;
+  background-color: #0e86d4;
+  color: white;
+  padding: 0 15px - 15px;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #68bbe3;
+}
+
+.rights-text {
+  font-size: 13px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 991px) {
+ul.navigation {
+    display: block;
+}
+
+.chat {
+    display: block;
+    width: 30%;
+    margin-left: 0;
+}
+
+.row {
+    display: block;
+}
+
+.subscribe-text {
+    font-size: 15px;
+}
+
+.col-md-6 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mainHeading {
+    font-size: 45px;
+}
+
+form {
+    width: 92%;
+}
+
+.footer input[type="text"], input[type="submit"] {
+    width: 197px;
+}
+
+.footer h1.text2 {
+    font-size: 24px;
+}
+
+.footer br {
+    display: none;
+}
+}

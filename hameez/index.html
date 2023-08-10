@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles-2.css" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- row & columns code -->
+  <style>
+    @media only screen and (max-width: 768px) {
+
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <ul class="navigation">
+      <li>
+        <a class="logo" href="index.html">Hameez</a>
+      </li>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li class="dropdown dropbtn" onclick="myFunction()">
+        <a href="javascript:void(0)">
+          Work <i class="fa-solid fa-caret-down"></i>
+        </a>
+        <div id="myDropdown" class="dropdown-content">
+          <ul>
+            <li>
+              <a href="javascript:void(0)">UI/UX Developer</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Graphics Designer</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">2D Animator</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="index.html">About</a>
+      </li>
+      <li>
+        <a href="#">Projects</a>
+      </li>
+      <li>
+        <a href="#">Services</a>
+      </li>
+      <a class="chat" href="#">
+        Let's chat
+      </a>
+    </ul>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <section class="section01 bg-color">
+    <div class="container">
+      <div class="d-flex">
+        <div class="profileImg">
+          <img src="Content/Man-PNG-Pic.png" alt="Profile Picture" />
+        </div>
+        <div class="aboutMe">
+          <h1 class="main-heading">HAMEEZ UR REHMAN</h1>
+          <p class="about-paragraph">
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia. It is a paradisematic country, in which
+            roasted parts of sentences fly into your mouth. Even the all-powerful
+            Pointing has no control about the blind texts it is an almost
+            unorthographic life.
+          </p>
+          <p class="social-icons">
+            <a href="javascript:void(0)"><i class="fa-brands fa-facebook"></i></a>
+            <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+            <a href="javascript:void(0)"><i class="fa-brands fa-linkedin"></i></a>
+          </p>
+          <button class="work">View my work</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- target section -->
+  <section class="section02">
+    <div class="container">
+      <div class="d-flex">
+        <div class="myGoals">
+          <h4>TARGET</h4>
+          <h1>Goals</h1>
+          <p>
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia. It is a paradisematic country, in which
+            roasted parts of sentences fly into your mouth.
+          </p>
+          <h4>1 - HIGH QUALITY THEME</h4>
+          <p>
+            Even the all-powerful Pointing has no control about the blind texts it
+            is an almost unorthographic life One day however a small line of blind
+            text by the name of Lorem Ipsum decided to leave for the far World of
+            Grammar.
+          </p>
+          <h4>2 - CUSTOMER SATISFACTION</h4>
+          <p>
+            Even the all-powerful Pointing has no control about the blind texts it
+            is an almost unorthographic life One day however a small line of blind
+            text by the name of Lorem Ipsum decided to leave for the far World of
+            Grammar.
+          </p>
+          <h4>3 - WELL MAINTAINED SITES</h4>
+          <p>
+            Even the all-powerful Pointing has no control about the blind texts it
+            is an almost unorthographic life One day however a small line of blind
+            text by the name of Lorem Ipsum decided to leave for the far World of
+            Grammar.
+          </p>
+        </div>
+        <div class="video">
+          <video controls>
+            <source src="...mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testemonials section -->
+  <section class="section03">
+    <div class="testemonials">
+      <h1 class="center-text">Testemonials</h1>
+      <p>What </p>
+    </div>
+  </section>
+
+  <!-- navbar & dropdown script -->
+  <script>
+    // Dropdown script //
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #595e60;
+  cursor: pointer;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: #f3f5f9;
+  margin: 0;
+  padding: 20px;
+  position: fixed;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.logo {
+  font-size: 18px;
+}
+
+ul.navigation {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+ul.navigation li {
+  margin: auto 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  display: flex;
+  font-size: 16px;
+  padding: 0px 7px;
+  border: none;
+  color: #595e60;
+  background-color: #f3f5f9;
+  cursor: pointer;
+}
+
+.dropbtn i {
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 12px;
+  position: absolute;
+  background-color: white;
+  min-width: 180px;
+  border-radius: 5px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content.show ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.dropdown-content.show ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  text-align: inherit;
+  display: block;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.chat {
+  display: block;
+  font-size: 16px;
+  color: #595e60;
+  background-color: #f3f5f9;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid;
+  cursor: pointer;
+  margin: auto;
+  margin-right: 0;
+}
+
+.chat:hover {
+  background-color: black;
+  color: #fff !important;
+}
+
+.bg-color {
+  background-color: #f2f2f2;
+  display: flex;
+}
+
+section.section01.bg-color {
+  padding: 100px 10px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileImg img {
+  width: 100%;
+}
+
+.aboutMe {
+  width: 100%;
+  padding-left: 100px;
+}
+
+.main-heading {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.about-paragraph {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #595e60;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  font-size: 30px;
+  color: #b700fa;
+}
+
+.work {
+  width: 100%;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 1px solid;
+  max-width: fit-content;
+}
+
+.work:hover {
+  background-color: #b974fe;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #b974fe;
+}
+
+section.section02 {
+  padding: 50px 10px;
+}
+
+.myGoals {
+  width: 100%;
+  max-width: 60%;
+  padding: 10px 40px;
+}
+
+.video {
+  width: 100%;
+  max-width: 40%;
+  margin: auto;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.myGoals h1 {
+  margin: 10px 0;
+  font-size: 45px;
+}
+
+.myGoals h4 {
+  color: gray;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.myGoals p {
+  font-weight: 600;
+}
+
+.testemonials {
+  display: flex;
+  justify-content: center;
+}
+
+.center-text {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 991px) {
+
+  .navbar {
+    width: 90%;
+  }
+
+  ul.navigation {
+    display: flex !important;
+  }
+
+  section.section01.bg-color {
+    padding: 100px 10px 50px;
+  }
+
+  .d-flex {
+    display: block;
+  }
+
+  .profileImg img {
+    max-width: 200px;
+    margin: auto;
+    display: block;
+  }
+
+  .aboutMe {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .myGoals {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .video {
+    max-width: 100%;
+  }
+
+  ul.navigation {
+    display: block;
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 12px;
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .dropdown-content {
+    height: 85px;
+    overflow: hidden;
+    margin-top: 7px;
+    margin-left: 14px;
+    min-width: 110px;
+  }
+
+  .dropdown-content a {
+    padding: 5px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+  }
+
+  a.chat-align {
+    margin-right: 10px;
+    margin-left: 33%;
+  }
+
+  .chat {
+    width: 69px;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  .image-left1 {
+    width: 100%;
+    height: 330px;
+  }
+
+  .main-heading {
+    font-size: 25px;
+  }
+
+  .about-paragraph {
+    font-size: 12px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+  }
+}

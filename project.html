@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles-3.css" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <ul class="navigation">
+      <li>
+        <a class="logo" href="index.html">Hameez</a>
+      </li>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li class="dropdown dropbtn" onclick="myFunction()">
+        <a href="#">
+          Work <i class="fa-solid fa-caret-down"></i>
+        </a>
+        <div id="myDropdown" class="dropdown-content">
+          <ul>
+            <li>
+              <a href="#">UI/UX Developer</a>
+            </li>
+            <li>
+              <a href="#">Graphics Designer</a>
+            </li>
+            <li>
+              <a href="#">2D Animator</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="project.html">Projects</a>
+      </li>
+      <a class="chat" href="contact.html">
+        Let's chat
+      </a>
+    </ul>
+    </div>
+  </header>
+
+  <section class="ourProjects">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="projects lg">
+          <img src="Content/who-we-are.jpg" alt="test" />
+          <div class="projectDetails lg">
+            <h2>Test</h2>
+            <p>ledasdasdasdasdasdasdasdasdasdasdasd</p>
+          </div>
+        </div>
+        <div class="projects sm">
+          <img src="Content/who-we-are.jpg" alt="test" />
+          <div class="projectDetails sm">
+            <h2>Test</h2>
+            <p>ledasdasdasdasdasdasdasdasdasdasdasd</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="projects sm">
+          <img src="Content/who-we-are.jpg" alt="test" />
+          <div class="projectDetails sm">
+            <h2>Test</h2>
+            <p>ledasdasdasdasdasdasdasdasdasdasdasd</p>
+          </div>
+        </div>
+        <div class="projects lg">
+          <img src="Content/who-we-are.jpg" alt="test" />
+          <div class="projectDetails lg">
+            <h2>Test</h2>
+            <p>ledasdasdasdasdasdasdasdasdasdasdasd</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="projects lg">
+          <img src="Content/who-we-are.jpg" alt="test" />
+          <div class="projectDetails lg">
+            <h2>Test</h2>
+            <p>ledasdasdasdasdasdasdasdasdasdasdasd</p>
+          </div>
+        </div>
+        <div class="projects sm">
+          <img src="Content/who-we-are.jpg" alt="test" />
+          <div class="projectDetails sm">
+            <h2>Test</h2>
+            <p>ledasdasdasdasdasdasdasdasdasdasdasd</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="left-text3">
+            <h3 class="subscribe-text">Subscribe</h3>
+            <h1 class="text2">
+              Subscribe To Get Latest Update <br />
+              From Us
+            </h1>
+          </div>
+          <div class="right-column">
+            <p class="right-text">
+              Neque porro quisquam est qui dolorem ipsum<br />
+              quia dolor sit amet, consectetur, adipisci velit.
+            </p>
+            <form class="Newsletter">
+              <input type="text" placeholder="Enter your email" name="mail" />
+              <input type="submit" value="Subscribe" />
+            </form>
+          </div>
+        </div>
+        <hr />
+        <p class="rights-text">
+          &copy; Copyright 2016 -2023 | All Rights are Reserved |
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- navbar & dropdown script -->
+  <script>
+    // Dropdown script //
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,577 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #595e60;
+  cursor: pointer;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: #f3f5f9;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+.logo {
+  font-size: 22px;
+}
+
+ul.navigation {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+ul.navigation li {
+  margin: auto 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  display: flex;
+  font-size: 16px;
+  padding: 0px 7px;
+  border: none;
+  color: #595e60;
+  background-color: #f3f5f9;
+  cursor: pointer;
+}
+
+.dropbtn i {
+  display: inline;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 12px;
+  position: absolute;
+  background-color: white;
+  min-width: 180px;
+  border-radius: 5px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content.show ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.dropdown-content.show ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  text-align: inherit;
+  display: block;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.chat {
+  display: block;
+  font-size: 16px;
+  color: #595e60;
+  background-color: #f3f5f9;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid;
+  cursor: pointer;
+  margin: auto;
+  margin-right: 0;
+}
+
+.chat:hover {
+  background-color: black;
+  color: #fff !important;
+}
+
+section.section01.bg-color {
+  padding: 50px 10px 0;
+}
+
+.testimonials {
+  margin-bottom: 30px;
+}
+
+.bg-color {
+  background-color: #f2f2f2;
+  display: flex;
+}
+
+.profileImg img {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  display: block;
+}
+
+.aboutMe {
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  display: block;
+  padding-left: 100px;
+}
+
+.main-heading {
+  font-size: 35px;
+}
+
+.about-paragraph {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-right: 61px;
+  color: #595e60;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 30px;
+  color: purple;
+}
+
+.work {
+  margin-top: 10px;
+  width: 25%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.work:hover {
+  background-color: purple;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
+}
+
+section.section02 {
+  padding: 50px 0;
+}
+
+.myGoals {
+  width: 100%;
+  max-width: 50%;
+}
+
+.video {
+  width: 100%;
+  max-width: 45%;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+.testimonials {
+  text-align: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+hr {
+  margin-top: 10px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 30px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 320px;
+  margin: auto;
+}
+
+.card:hover {
+  border: 1px solid blue;
+}
+
+.image-frame {
+  margin: auto;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.image-frame img {
+  width: 40%;
+}
+
+.name {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.sub {
+  text-align: center;
+  margin-top: 5px;
+  color: grey;
+}
+
+.footer {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  background-color: #f2f2f2;
+}
+
+p {
+  margin: 20px 0;
+}
+
+form.Newsletter {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0px;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+         By default, textareas have a monospace font */
+  font: 20px sans-serif;
+  margin-top: 8px;
+  /* Uniform text field size */
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.f-container {
+  width: 90%;
+  margin: auto;
+}
+
+.footer p.rights-text {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe-text {
+  font-size: 20px;
+  padding-top: 40px;
+  color: blue;
+}
+
+.text2 {
+  margin-top: 6px;
+}
+
+.footer input[type="text"],
+input[type="submit"] {
+  font-size: 15px;
+  width: 265px;
+  margin-top: -7px;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+
+input[type="submit"] {
+  width: 25%;
+  margin-left: -6px;
+  background-color: #0e86d4;
+  color: white;
+  padding: 0 15px - 15px;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #68bbe3;
+}
+
+hr {
+  margin-top: 10px;
+}
+
+.rights-text {
+  font-size: 13px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (min-width: 400px) and (max-width: 991px) {
+  .dropbtn i {
+    margin-left: 12px;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 12px;
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .dropdown-content {
+    height: 130px;
+    padding-bottom: 56px;
+    overflow: hidden;
+    margin-top: 3px;
+    min-width: 110px;
+  }
+
+  .dropdown-content a {
+    padding: 5px;
+    padding-bottom: 6px;
+    margin-top: 5px;
+  }
+
+  .chat {
+    width: fit-content;
+    margin-left: 0;
+  }
+
+  section.section01.bg-color {
+    padding: 50px 10px 50px;
+  }
+
+  .bg-color {
+    width: 100%;
+  }
+
+  .image-left1 {
+    margin-top: 100px;
+    width: 50%;
+    height: 250px;
+  }
+
+  .image-left1 img {
+    height: auto;
+    padding: 0;
+  }
+
+  .right-text1 {
+    top: 5%;
+  }
+
+  .main-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .about-paragraph {
+    font-size: 12px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+  }
+
+  .work {
+    width: 20%;
+    margin-left: 40%;
+  }
+
+  .left-text1 {
+    margin-top: 40px;
+  }
+
+  video {
+    margin-top: 60px;
+  }
+
+  .center-text {
+    margin-top: 0;
+  }
+
+  .flex-container {
+    padding: 0;
+  }
+
+  .card {
+    width: 100%;
+    margin: 15px 15px auto;
+  }
+
+  .subscribe-text {
+    font-size: 15px;
+  }
+
+  .text2 {
+    font-size: 24px;
+  }
+
+  input[type="text"] {
+    padding-right: 48px;
+  }
+
+  footer br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  ul.navigation {
+    max-width: 95%;
+    display: block;
+  }
+  .row {
+    display: block;
+  }
+  .myGoals {
+    max-width: 100%;
+  }
+
+  .video {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  h4,
+  h1,
+  p {
+    text-align: left;
+  }
+
+  .chat {
+    width: fit-content;
+    margin-left: 0;
+  }
+
+  section.section01.bg-color {
+    padding: 50px 10px 50px;
+  }
+
+  .main-heading {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  .aboutMe {
+    padding-left: 0;
+  }
+
+  .about-paragraph {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .social-icons {
+    text-align: center;
+  }
+
+  .work {
+    margin-left: 38%;
+  }
+
+  .f-container {
+    width: 95%;
+    margin: auto;
+  }
+
+  .subscribe-text {
+    font-size: 15px;
+  }
+
+  .text2 {
+    font-size: 24px;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  .footer input[type="text"] {
+    width: 203px;
+    display: flex;
+    margin: 0;
+    padding-block: 14px;
+  }
+
+  .footer input[type="submit"] {
+    width: 116px;
+    display: flex;
+    margin: 0;
+    padding-block: 14px;
+  }
+
+  .footer input[type="submit"] {
+    padding: 8px 25px;
+  }
+
+  .card {
+    margin: auto 10px;
+  }
+
+  br {
+    display: none;
+  }
+}
